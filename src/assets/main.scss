@@ -1,4 +1,4 @@
-@import './base.css';
+@import '@/assets/base.css';
 
 #app {
   max-width: 1280px;
@@ -31,3 +31,32 @@ a,
 }
 
 $jc-theme-bg-clr: #CFE6E8;
+
+$jc-button-radius: 25px;
+.jc-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: var(--jc-theme-yellow);
+  background-color: var(--jc-theme-blue);
+  border: none;
+  border-radius: $jc-button-radius;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--jc-theme-blue-darker);
+    outline: none;
+  }
+
+  &:active {
+    background-color: var(--jc-theme-blue-darkest);
+  }
+
+  &:disabled {
+    background-color: var(--jc-disabled-clr);
+  }
+}
