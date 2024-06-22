@@ -1,6 +1,10 @@
 {
+    "jc": "Job Circle",
+    "post": "Post",
     "about": "About",
     "post_job": "Post a job",
+    "post_job_title": "It's very helpful to mark the related categories",
     "view_all_jobs": "View all jobs",
-    "view_category_jobs": "View specific jobs"
+    "view_category_jobs": "View specific jobs",
+    "disclaimer":"Job Circle is a free application provided as a social service. Users are encouraged to share and contribute back to support each other."
 }

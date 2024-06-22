@@ -34,14 +34,6 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
-
-  --jc-disabled-clr: #cccccc; /* Light gray */
-
-  --jc-theme-creme: #F4E9C9;
-  --jc-theme-yellow: #FFE86B;
-  --jc-theme-blue: #44838C;
-  --jc-theme-blue-darker: #3b7179;
-  --jc-theme-blue-darkest: #315e65;
 }
 
 @media (prefers-color-scheme: dark) {

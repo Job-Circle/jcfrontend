@@ -31,6 +31,18 @@ a,
 }
 */
 
+/* semantic color variables for this project */
+:root {
+  --jc-theme-creme: #F4E9C9;
+  --jc-theme-yellow: #FFE86B;
+  --jc-theme-blue-lightest: #87bbc4;
+  --jc-theme-blue-lighter: #66a3ad;
+  --jc-theme-blue: #44838C;
+  --jc-theme-blue-darker: #3b7179;
+  --jc-theme-blue-darkest: #315e65;
+  --jc-disabled-clr: #cccccc; /* Light gray */
+}
+
 $jc-theme-bg-clr: #CFE6E8;
 
 $jc-button-radius: 25px;

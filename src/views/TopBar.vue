@@ -4,7 +4,7 @@
             <img src="@/assets/logo.png" alt="App Logo" class="app-logo" />
         </div>
         <div class="bar">
-            <div class="app-name">Job Circle</div>
+            <div class="app-name">{{ $t(txtKey)}}</div>
             <div class="language-buttons">
                 <button class="lang-button" @click="setLocale('en')">En</button>
                 <button class="lang-button" @click="setLocale('ar')">ع</button>
@@ -15,7 +15,13 @@
 
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
+
+const props = defineProps({
+    txtKey: String
+});
 const { locale } = useI18n()
+
+
 const setLocale = (lang: string) => {
     locale.value = lang
 }
@@ -39,10 +45,10 @@ const setLocale = (lang: string) => {
     flex: 1;
     background-color: var(--jc-theme-creme);
     padding: 10px;
+    /*
     border-top-right-radius: 15px;
-    /* Top right corner */
     border-bottom-right-radius: 15px;
-    /* Bottom right corner */
+    */
 }
 
 .app-name {
