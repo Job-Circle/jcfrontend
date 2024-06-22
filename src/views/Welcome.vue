@@ -1,4 +1,5 @@
 <template>
+  <TopBar class="mb-4"/>
   <div class="button-container">
     <router-link to="/pj" class="link">
       <Transition name="fade">
@@ -25,6 +26,7 @@
 </template>
 
 <script setup lang="ts">
+import TopBar from './TopBar.vue';
 </script>
 
 
@@ -41,6 +43,7 @@
 
 .link {
   @extend .jc-button;
-  width: 150px;
+  font-weight: 700;
+  width: 200px;
 }
 </style>
