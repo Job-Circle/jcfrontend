@@ -1,4 +1,13 @@
-To run the project
+# For development environment
+
+## Prerequisites
+- Make sure you have `git` installed on your enviornment.
+- Install [`Node.js`](https://nodejs.org/en/download/).
+
+## Preparation
+- Clone the repository
+  
+## Run the project
 ```
 cd jcfrontend
 npm i
