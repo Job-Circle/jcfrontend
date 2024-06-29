@@ -1,8 +1,11 @@
 <template>
     <Card class="m-2">
-        <p id="catsTitle" :dir="isRtl ? 'rtl' : 'ltr'" class="w-100">{{ $t("post_job_title") }}</p>
+        <p id="catsTitle" :dir="isRtl ? 'rtl' : 'ltr'" class="w-100">
+            <i class="bi bi-bookmark-star ylo-txt"></i><i class="bi bi-bookmark-star ylo-txt"></i>
+            {{ $t("post_job_title") }}
+        </p>
         <div :class="{ 'checkbox-container': true, 'rtl': locale === 'ar' }">
-            <div v-for="(cat, index) in jobCats" :key="index" class="me-2 mt-1 cat-cb">
+            <div v-for="(cat, index) in jobCats" :key="index" class="me-2 mt-1 cat-cb gKufiFont">
                 <label>
                     <input type="checkbox" :value="cat" v-model="selectedCats" />
                     {{ locale === 'en' ? cat.nameEn : cat.nameAr }}
@@ -25,15 +28,15 @@ const jobCats: IJobCat[] = [
     { id: 8, nameAr: "حسابات", nameEn: "Accounting" },
     { id: 3, nameAr: "مخازن", nameEn: "Warehousing" },
     { id: 4, nameAr: "أمن", nameEn: "Security" },
+    { id: 15, nameAr: "HR", nameEn: "HR" },
     { id: 6, nameAr: "سكرتارية", nameEn: "Secretarial" },
     { id: 14, nameAr: "سائق", nameEn: "Driver" },
     { id: 10, nameAr: "مبيعات", nameEn: "Sales" },
     { id: 11, nameAr: "كول سنتر", nameEn: "Call Center" },
-    { id: 18, nameAr: "IT", nameEn: "IT" },
     { id: 12, nameAr: "مطعم", nameEn: "Restaurant" },
     { id: 13, nameAr: "كاشير", nameEn: "Cashier" },
-    { id: 15, nameAr: "HR", nameEn: "HR" },
     { id: 9, nameAr: "عام شباب", nameEn: "General Youth" },
+    { id: 18, nameAr: "IT", nameEn: "IT" },
     { id: 19, nameAr: "فني", nameEn: "Technician" },
     { id: 7, nameAr: "تدريس", nameEn: "Teaching" },
     { id: 1, nameAr: "هندسة", nameEn: "Engineering" },
@@ -87,5 +90,9 @@ input[type="checkbox"]:checked {
 #catsTitle {
     color: var(--jc-theme-blue);
     margin-bottom: .5rem;
+}
+
+.ylo-txt {
+    color: var(--jc-theme-yellow);
 }
 </style>
