@@ -71,6 +71,7 @@ export default {
   width: 200px;
   font-size: 24px;
   color: var(--jc-theme-yellow);
+  margin-bottom: 1rem;
 }
 
 .button-div {
