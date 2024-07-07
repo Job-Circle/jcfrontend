@@ -3,6 +3,7 @@ import Welcome from '@/views/Welcome.vue'
 import ViewAllJobs from `@/views/ViewAllJobs.vue`
 import ViewCategoryJobs from `@/views/ViewCategoryJobs.vue`
 import PostJob from `@/views/PostJob.vue`
+import PostBulkWA from `@/views/PostBulkWA.vue`
 import About from '@/views/About.vue'
 
 const router = createRouter({
@@ -32,6 +33,11 @@ const router = createRouter({
       path: `/vcjs`,
       name: "vcjs",
       component: ViewCategoryJobs,
+    },
+    {
+      path: `/wabulk`,
+      name: "wabulk",
+      component: PostBulkWA,
     },
     {
       path: "/about",

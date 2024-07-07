@@ -1,7 +1,6 @@
 <template>
   <div>
-    <TopBar :txtKey="'post_job'" class="mb-4" />
-    <SelectCategory />
+    <TopBar :txtKey="'post_wa_bulk'" class="mb-4" />
     <Card class="m-2">
       <div class="editor-container">
         <ckeditor :editor="editor" v-model="editorData" :config="editorConfig"></ckeditor>
@@ -15,7 +14,6 @@
 
 <script setup lang="ts">
 import { ref, watch } from "vue";
-import SelectCategory from "@/components/PostJob/SelectCategory.vue";
 import TopBar from "./TopBar.vue";
 import Card from "@/components/common/Card.vue";
 import { useI18n } from 'vue-i18n';
@@ -36,7 +34,7 @@ const editorConfig = ref({
   plugins: [Bold, Essentials, Italic, Paragraph, Undo],
   toolbar: ['undo', 'redo', '|', 'bold', 'italic'],
   height: 300,
-  language: "ar", // $$ en when needed
+  language: "ar",   // $$ en when needed
   translations: [
     coreTranslations,
     premiumFeaturesTranslations
@@ -55,7 +53,7 @@ watch(() => locale.value, (newLocale) => {
 
 async function post() {
   try {
-    const response = await axios.post('http://localhost:8000/posts', { content: editor.value });  // $$ URL
+    // $$ const response = await axios.post('http://localhost:8000/posts', { content: editor.value });
   } catch (error) {
     console.error('Error', error);
   }

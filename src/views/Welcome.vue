@@ -1,28 +1,37 @@
 <template>
-  <TopBar :txtKey="'jc'" class="mb-4" />
-  <div class="button-container">
-    <router-link to="/pj" class="link">
-      <Transition name="fade">
-        {{ $t('post_job') }}
-      </Transition>
-    </router-link>
-    <router-link to="/vjs" class="link">
-      <Transition name="fade">
-        {{ $t('view_all_jobs') }}
-      </Transition>
-    </router-link>
-    <router-link to="/vcjs" class="link">
-      <Transition name="fade">
-        {{ $t('view_category_jobs') }}
-      </Transition>
-    </router-link>
-    <router-link to="/about" class="link">
-      <Transition name="fade">
-        {{ $t('about') }}
-      </Transition>
-    </router-link>
-    <div class="disclaimer-bar">
-      <p>{{ $t("disclaimer") }}</p>
+  <div>
+    <TopBar :txtKey="'jc'" class="mb-4" />
+    <div class="button-container">
+      <router-link to="/pj" class="link">
+        <Transition name="fade">
+          {{ $t('post_job') }}
+        </Transition>
+      </router-link>
+      <router-link to="/vjs" class="link">
+        <Transition name="fade">
+          {{ $t('view_all_jobs') }}
+        </Transition>
+      </router-link>
+      <router-link to="/vcjs" class="link">
+        <Transition name="fade">
+          {{ $t('view_category_jobs') }}
+        </Transition>
+      </router-link>
+      <br>
+      <router-link to="/wabulk" class="link">
+        <Transition name="fade">
+          {{ $t('post_wa_bulk') }}
+        </Transition>
+      </router-link>
+      <br>
+      <router-link to="/about" class="link">
+        <Transition name="fade">
+          {{ $t('about') }}
+        </Transition>
+      </router-link>
+      <div class="disclaimer-bar">
+        <p>{{ $t("disclaimer") }}</p>
+      </div>
     </div>
   </div>
 </template>
