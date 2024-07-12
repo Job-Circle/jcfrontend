@@ -53,7 +53,7 @@ watch(() => locale.value, (newLocale) => {
 
 async function post() {
   try {
-    // $$ const response = await axios.post('http://localhost:8000/posts', { content: editor.value });
+    const response = await axios.post('http://localhost:8000/pbulkwa', { content: editor.value });
   } catch (error) {
     console.error('Error', error);
   }
